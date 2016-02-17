@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Github Recreate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <a href="#"><span class="octicon octicon-mark-github"></span></a>
+        <input type="text" name="searchbar" value="Search GitHub">
+        <ul>
+          <li><a href="#">Pull requests</a></li>
+          <li><a href="#">Issues</a></li>
+          <li><a href="#">Gist</a></li>
+        </ul>
+        <ul id="rightNav">
+          <li><a href="#"><span class="octicon octicon-plus"></span><span class="octicon octicon-triangle-down"></span></a></li>
+          <li><a href="#"><img class="avatar"src="images/justin.jpg" alt="author" /><span class="octicon octicon-triangle-down"></span></a></li>
+        </ul>
+
+      </nav>
+    </header>
+    <main id="container">
+
+      <!-- LEFT PROFILE -->
+      <aside class="profile">
+        <div id="profilePic"><img src="images/justin.jpg" alt="" /></div>
+        <h4>Justin Lock</h4>
+        <h3>jlock64</h3>
+        <p>Joined on Jan 2, 2016</p>
+        <div class="status">
+          <div class="statusBox">
+            <h3>0</h3>
+            <p>Followers</p>
+          </div>
+          <div class="statusBox">
+            <h3>0</h3>
+            <p>Starred</p>
+          </div>
+          <div class="statusBox">
+            <h3>0</h3>
+            <p>Following</p>
+          </div>
+        </div>
+        <div class="orgs">
+          <img src="*" alt="" />
+        </div>
+      </aside>
+
+      <!-- SECTION -->
+      <section>
+        <nav id="sectionNav">
+          <a href="#"><span class="octicon octicon-rss"></span>Contributions</a>
+          <a href="#"><span class="octicon octicon-rss"></span>Repositories</a>
+          <a href="#"><span class="octicon octicon-rss"></span>Public Activity</a>
+          <div class="right">
+            <a href="#"><span class="octicon octicon-pencil"></span>Edit Profile</a>
+          </div>
+        </nav>
+        <div class="repoSection">
+          <h3>Popular repositories</h3>
+          <ul class="repositories">
+            <li><a href="*"><span class="octicon octicon-repo"></span><span>woodyGram</span><span class="stars">0</span><span class="octicon octicon-star"></span></li></a>
+
+          </ul>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- SCRIPT TAGS -->
+    <script src="/bower_components/underscore/underscore.js" charset="utf-8"></script>
+    <script src="/bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="users.js" charset="utf-8"></script>
+    <script src="orgs.js" charset="utf-8"></script>
+    <script src="events.js" charset="utf-8"></script>
+    <script src="repos.js" charset="utf-8"></script>
+    <!-- <script src="github.js" charset="utf-8"></script> -->
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
