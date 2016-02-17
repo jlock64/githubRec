@@ -12,9 +12,9 @@
     <!-- HEADER -->
     <header>
       <nav>
-        <a href="#"><span class="octicon octicon-mark-github"></span></a>
+        <a href="#"><span class="mega-octicon octicon-mark-github"></span></a>
         <input type="text" name="searchbar" value="Search GitHub">
-        <ul>
+        <ul id="leftNav">
           <li><a href="#">Pull requests</a></li>
           <li><a href="#">Issues</a></li>
           <li><a href="#">Gist</a></li>
@@ -31,25 +31,28 @@
       <!-- LEFT PROFILE -->
       <aside class="profile">
         <div id="profilePic"><img src="images/justin.jpg" alt="" /></div>
-        <h4>Justin Lock</h4>
+        <h1>Justin Lock</h1>
         <h3>jlock64</h3>
-        <p>Joined on Jan 2, 2016</p>
+        <div class="whenJoined">
+          <span class="octicon octicon-clock"><p class="lines">Joined on Jan 2, 2016</p></span>
+        </div>
         <div class="status">
           <div class="statusBox">
-            <h3>0</h3>
+            <h1>0</h1>
             <p>Followers</p>
           </div>
           <div class="statusBox">
-            <h3>0</h3>
+            <h1>0</h1>
             <p>Starred</p>
           </div>
           <div class="statusBox">
-            <h3>0</h3>
+            <h1>0</h1>
             <p>Following</p>
           </div>
         </div>
         <div class="orgs">
-          <img src="*" alt="" />
+          <h4>Organizations</h4>
+          <img src="images/fee.png" alt="" />
         </div>
       </aside>
 
@@ -63,11 +66,16 @@
             <a href="#"><span class="octicon octicon-pencil"></span>Edit Profile</a>
           </div>
         </nav>
-        <div class="repoSection">
-          <h3>Popular repositories</h3>
-          <ul class="repositories">
-            <li><a href="*"><span class="octicon octicon-repo"></span><span>woodyGram</span><span class="stars">0</span><span class="octicon octicon-star"></span></li></a>
-
+        <div class="subSectionNav">
+          <input type="text" name="find repo" value="Find a repository...">
+          <input type="button" name="search" value="Search">
+          <ul class="repoLinks">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Public</a></li>
+            <li><a href="#">Private</a></li>
+            <li><a href="#">Sources</a></li>
+            <li><a href="#">Forks</a></li>
+            <li><a href="#">Mirrors</a></li>
           </ul>
         </div>
 

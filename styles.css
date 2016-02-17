@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+body {
+  font-family: Helvetica; }
+
 a {
   text-decoration: none; }
 
@@ -10,36 +13,92 @@ header {
   padding-bottom: 10px;
   background-color: #f5f5f5;
   border-bottom: 1px solid #e5e5e5;
-  text-align: center; }
+  text-align: left; }
   header nav {
+    margin: 0 auto;
     width: 80%; }
   header ul, header li {
     display: inline-block;
     margin: 0; }
   header a {
     display: inline-block;
-    padding: 4px 8px;
     font-size: 13px;
     font-weight: bold;
-    line-height: 20px;
     color: #333; }
+  header ul#rightNav {
+    margin-left: 32%;
+    vertical-align: 30%; }
+  header ul#leftNav {
+    vertical-align: 30%;
+    padding-left: 1%; }
+  header input[type="text"] {
+    vertical-align: 30%;
+    width: 36%;
+    padding: 0.5%;
+    color: #aaa;
+    font-size: 13px; }
 
 header img.avatar {
   width: 20px;
   height: 20px; }
 
+header span.mega-octicon {
+  margin-right: 10px;
+  margin-left: -2px;
+  color: #333; }
+
 #container {
   width: 80%;
-  margin: 0 auto;
+  margin: 1.5% auto;
   height: 1000px; }
 
 aside {
   display: inline-block;
-  width: 25%;
-  background-color: lightblue; }
+  width: 22%; }
+  aside img {
+    border: 0;
+    width: 100%;
+    border-radius: 5%;
+    text-align: center; }
+  aside h1 {
+    margin: 0;
+    font-size: 26px;
+    padding-left: 1%;
+    padding-top: 3%; }
+  aside h3 {
+    margin: 0;
+    color: #666;
+    font-weight: 300;
+    padding-left: 1%; }
+  aside p.lines {
+    display: inline-block;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 20px;
+    font-size: 13px; }
+  aside div.statusBox {
+    display: inline-block;
+    width: 32%;
+    text-align: center; }
+
+aside .statusBox p {
+  margin: 0;
+  font-size: 13px; }
+
+aside .statusBox h1 {
+  color: #4078c0; }
+
+.orgs img {
+  text-align: left;
+  padding-top: 20px;
+  width: 20%; }
+
+.orgs h4 {
+  color: #333;
+  margin-bottom: 0; }
 
 section {
   display: inline-block;
   vertical-align: top;
-  width: 73%;
-  background-color: green; }
+  width: 77%;
+  background-color: #bbb; }
