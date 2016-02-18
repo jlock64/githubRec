@@ -1,3 +1,6 @@
+$(document).ready(function () {
+  // BEGIN JAVASCRIPT //
+
 $('#username').text(users.name);
 $('#login').text(users.login);
 
@@ -30,7 +33,7 @@ repos.forEach(function(el) {
 + "0"
 + "</a>"
 + "<p>"
-+ el.name
++ el.description
 + "</p>"
 + "<p>"
 + el.updated_at
@@ -38,3 +41,60 @@ repos.forEach(function(el) {
 + "</div>"
 })
 $('.repoList').append(repoPosts);
+
+////////// ACTIVITY MESSAGES /////////
+
+var eventsObj = events.map(function(el) {
+  if(el.payload.commits) {
+    var commitMsg = el.payload.commits[0].message;
+  } else {
+    var commitMsg = ""
+  }
+  return {
+    username: el.actor.login,
+    time: el.created_at,
+    master: el.payload.master_branch,
+    repoName: el.repo.name,
+    avatar: el.actor.avatar_url,
+    commitNum: el.payload.head,
+    message: commitMsg
+  }
+})
+
+var activityPosts = "";
+eventsObj.forEach(function(el) {
+  activityPosts += "<div class='public-activity'>"
+                + "<div class='icon-wrapper'>"
+                + "<span class='mega-octicon octicon-git-commit'>"
+                + "</span>"
+                + "</div>"
+                + "<div class='time'>"
+                + el.time
+                + "</div>"
+                + "<div class='title'>"
+                + el.username + " pushed to " + el.master + " at " + el.repoName
+                + "</div>"
+                + "<div class='details'>"
+                + el.avatar + "<span class='octicon octicon-mark-github'>"
+                + "</span>"
+                + el.commitNum + el.message
+                + "</div>"
+                + "</div>"
+  console.log(activityPosts);
+})
+$(".public-activity-wrapper").append(activityPosts);
+
+$('#pubActivity').on('click', function(events) {
+  event.preventDefault;
+  $('.subSectionNav-wrapper').addClass('inactive');
+  $('.public-activity-wrapper').removeClass('inactive');
+})
+
+$('#repoLink').on('click', function(events) {
+  event.preventDefault;
+  $('.subSectionNav-wrapper').removeClass('inactive');
+  $('.public-activity-wrapper').addClass('inactive');
+})
+
+
+}) // END OF JAVASCRIPT //

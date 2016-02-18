@@ -175,6 +175,13 @@ section {
       SUB-SECTION NAV
 ****************************/
 
+// .active {
+//   display: inline-block;
+// }
+.inactive {
+  display: none;
+}
+
 
 div.subSectionNav {
   padding-left: 15px;
@@ -229,7 +236,7 @@ div.repoList {
   }
   h3 {
     display: inline-block;
-    padding-right: 540px;
+    padding-right: 500px;
   }
   div.repoStats {
     display: inline;

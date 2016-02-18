@@ -60,43 +60,64 @@
       <section>
         <nav id="sectionNav">
           <a class="sectionLinks"href="#"><span class="octicon octicon-diff-added"></span>Contributions</a>
-          <a class="sectionLinks" href="#"><span class="octicon octicon-repo"></span>Repositories</a>
-          <a class="sectionLinks" href="#"><span class="octicon octicon-rss"></span>Public Activity</a>
+          <a id="repoLink" class="sectionLinks" href="#"><span class="octicon octicon-repo"></span>Repositories</a>
+          <a id="pubActivity" class="sectionLinks" href="#"><span class="octicon octicon-rss"></span>Public Activity</a>
           <div class="right">
             <a id="profileButton"href="#"><span class="octicon octicon-pencil"></span>Edit Profile</a>
           </div>
         </nav>
-        <div class="subSectionNav">
-          <input type="text" name="find repo" value="Find a repository...">
-          <input type="button" name="search" value="Search">
-          <ul class="repoLinks">
-            <li><a class="links" href="#">All</a></li>
-            <li><a class="links" href="#">Public</a></li>
-            <li><a class="links" href="#">Private</a></li>
-            <li><a class="links" href="#">Sources</a></li>
-            <li><a class="links" href="#">Forks</a></li>
-            <li><a class="links" href="#">Mirrors</a></li>
-          </ul>
-          <a id="greenButton" href="#"><span class="octicon octicon-repo"></span>New</a>
-        </div>
-        <div class="repoList">
-          <h3><a class="repoHeadline" href="#">githubRec</a></h3>
-          <div class="repoStats">
-            <span>Javascript</span>
-            <a href="#"><span class="octicon octicon-star"></span>0</a>
-            <a href="#"><span class="octicon octicon-git-branch"></span>0</a>
-            <p>Recreate my github profile page</p>
-            <p>Updated 4 hours ago</p>
+        <div class="subSectionNav-wrapper">
+          <div class="subSectionNav active">
+            <input type="text" name="find repo" value="Find a repository...">
+            <input type="button" name="search" value="Search">
+            <ul class="repoLinks">
+              <li><a class="links" href="#">All</a></li>
+              <li><a class="links" href="#">Public</a></li>
+              <li><a class="links" href="#">Private</a></li>
+              <li><a class="links" href="#">Sources</a></li>
+              <li><a class="links" href="#">Forks</a></li>
+              <li><a class="links" href="#">Mirrors</a></li>
+            </ul>
+            <a id="greenButton" href="#"><span class="octicon octicon-repo"></span>New</a>
+          </div>
+          <div class="repoList">
+            <h3><a class="repoHeadline" href="#">githubRec</a></h3>
+            <div class="repoStats">
+              <span>Javascript</span>
+              <a href="#"><span class="octicon octicon-star"></span>0</a>
+              <a href="#"><span class="octicon octicon-git-branch"></span>0</a>
+              <p>Recreate my github profile page</p>
+              <p>Updated 4 hours ago</p>
+            </div>
           </div>
         </div>
-
+        <section class="public-activity-wrapper inactive">
+          <!-- <div class="public-activity">
+            <div class="icon-wrapper">
+              <span></span>
+            </div>
+            <div class="time">el.time</div>
+            <div class="title">
+              el.username + pushed to + el.master + at + jlock64/githubRec
+            </div>
+            <div class="details">
+              el.avatar + <span></span> + el.commit + el.commit message
+            </div>
+          </div> -->
+        </section>
       </section>
+
+
+
+
+
 
     </main>
 
     <!-- SCRIPT TAGS -->
     <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
     <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <!-- <script src="bower_components/moment/moments.js" charset="utf-8"></script> -->
     <script src="users.js" charset="utf-8"></script>
     <script src="orgs.js" charset="utf-8"></script>
     <script src="events.js" charset="utf-8"></script>
