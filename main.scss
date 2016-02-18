@@ -8,8 +8,14 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
+
+
+/****************************
+          HEADER
+****************************/
 header {
   width: 100%;
   padding-top: 10px;
@@ -30,9 +36,10 @@ header {
     font-size: 13px;
     font-weight: bold;
     color: #333;
+    margin-left: 5px;
   }
   ul#rightNav {
-    margin-left: 32%;
+    margin-left: 27%;
     vertical-align: 30%;
   }
   ul#leftNav {
@@ -65,9 +72,15 @@ header span.mega-octicon {
   height: 1000px;
 }
 
+
+
+/****************************
+          ASIDE
+****************************/
+
 aside {
   display: inline-block;
-  width: 22%;
+  width: 20%;
   img {
     border: 0;
     width: 100%;
@@ -95,7 +108,7 @@ aside {
   }
   div.statusBox {
     display: inline-block;
-    width: 32%;
+    width: 30%;
     text-align: center;
   }
 }
@@ -122,9 +135,115 @@ aside .statusBox {
   }
 }
 
+
+/****************************
+           SECTION
+****************************/
+
 section {
-  display: inline-block;
-  vertical-align: top;
-  width: 77%;
-  background-color: #bbb;
+    display: inline-block;
+    vertical-align: top;
+    width: 77%;
+    margin-left: 20px;
+  a.sectionLinks {
+    padding-left: 20px;
+    color: #666;
+  }
+  nav#sectionNav {
+    margin-bottom: 15px;
+  }
+  div.right {
+    display: inline-block;
+    padding-left: 280px;
+    padding-top: 20px;
+  }
+  span {
+    padding-right: 5px;
+  }
+  a#profileButton {
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 10px;
+  }
+}
+
+/****************************
+      SUB-SECTION NAV
+****************************/
+
+
+div.subSectionNav {
+  padding-left: 15px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  input[type="button"] {
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+  }
+  input[type="text"] {
+    width: 260px;
+    padding: 7px 8px;
+    font-size: 13px;
+    color: #aaa;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  ul {
+    display: inline-block;
+    padding-left: 10px;
+  }
+  li {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 14px;
+  }
+  a.links {
+    color: #4078c0;
+  }
+  a#greenButton {
+    margin-left: 30px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    background-color: #60b044;
+    padding: 6px 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+  }
+}
+
+div.repoList {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  a.repoHeadline {
+    color: #4078c0;
+  }
+  h3 {
+    display: inline-block;
+    padding-right: 600px;
+  }
+  div.repoStats {
+    display: inline;
+  }
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+  }
+  p {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #888;
+  }
 }

@@ -31,7 +31,7 @@
       <!-- LEFT PROFILE -->
       <aside class="profile">
         <div id="profilePic"><img src="images/justin.jpg" alt="" /></div>
-        <h1>Justin Lock</h1>
+        <h1 id="username">Justin Lock</h1>
         <h3>jlock64</h3>
         <div class="whenJoined">
           <span class="octicon octicon-clock"><p class="lines">Joined on Jan 2, 2016</p></span>
@@ -59,24 +59,35 @@
       <!-- SECTION -->
       <section>
         <nav id="sectionNav">
-          <a href="#"><span class="octicon octicon-rss"></span>Contributions</a>
-          <a href="#"><span class="octicon octicon-rss"></span>Repositories</a>
-          <a href="#"><span class="octicon octicon-rss"></span>Public Activity</a>
+          <a class="sectionLinks"href="#"><span class="octicon octicon-diff-added"></span>Contributions</a>
+          <a class="sectionLinks" href="#"><span class="octicon octicon-repo"></span>Repositories</a>
+          <a class="sectionLinks" href="#"><span class="octicon octicon-rss"></span>Public Activity</a>
           <div class="right">
-            <a href="#"><span class="octicon octicon-pencil"></span>Edit Profile</a>
+            <a id="profileButton"href="#"><span class="octicon octicon-pencil"></span>Edit Profile</a>
           </div>
         </nav>
         <div class="subSectionNav">
           <input type="text" name="find repo" value="Find a repository...">
           <input type="button" name="search" value="Search">
           <ul class="repoLinks">
-            <li><a href="#">All</a></li>
-            <li><a href="#">Public</a></li>
-            <li><a href="#">Private</a></li>
-            <li><a href="#">Sources</a></li>
-            <li><a href="#">Forks</a></li>
-            <li><a href="#">Mirrors</a></li>
+            <li><a class="links" href="#">All</a></li>
+            <li><a class="links" href="#">Public</a></li>
+            <li><a class="links" href="#">Private</a></li>
+            <li><a class="links" href="#">Sources</a></li>
+            <li><a class="links" href="#">Forks</a></li>
+            <li><a class="links" href="#">Mirrors</a></li>
           </ul>
+          <a id="greenButton" href="#"><span class="octicon octicon-repo"></span>New</a>
+        </div>
+        <div class="repoList">
+          <h3><a class="repoHeadline" href="#">githubRec</a></h3>
+          <div class="repoStats">
+            <span>Javascript</span>
+            <a href="#"><span class="octicon octicon-star"></span>0</a>
+            <a href="#"><span class="octicon octicon-git-branch"></span>0</a>
+            <p>Recreate my github profile page</p>
+            <p>Updated 4 hours ago</p>
+          </div>
         </div>
 
       </section>
@@ -90,7 +101,7 @@
     <script src="orgs.js" charset="utf-8"></script>
     <script src="events.js" charset="utf-8"></script>
     <script src="repos.js" charset="utf-8"></script>
-    <!-- <script src="github.js" charset="utf-8"></script> -->
+    <script src="github.js" charset="utf-8"></script>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
