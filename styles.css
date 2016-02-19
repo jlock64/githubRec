@@ -80,18 +80,24 @@ aside {
     padding-left: 1%; }
   aside p.lines {
     display: inline-block;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 20px 20px;
-    font-size: 13px; }
+    padding: 5px 5px;
+    font-size: 13px;
+    color: #000; }
   aside div.statusBox {
     display: inline-block;
     width: 30%;
     text-align: center; }
+  aside .octicon-clock {
+    color: #aaa; }
+  aside .whenJoined {
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd; }
 
 aside .statusBox p {
   margin: 0;
-  font-size: 13px; }
+  font-size: 12px;
+  color: #aaa; }
 
 aside .statusBox h1 {
   color: #4078c0; }
@@ -175,6 +181,13 @@ div.subSectionNav {
     border: 1px solid #d5d5d5;
     border-radius: 5px; }
 
+a#pubActivity:hover, #repoLink:hover, .sectionLinks:hover {
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  padding-top: 3px;
+  padding-right: 3px; }
+
 div.repoList {
   padding-top: 15px;
   padding-bottom: 30px;
@@ -197,3 +210,86 @@ div.repoList {
     margin-bottom: 0;
     font-size: 13px;
     color: #888; }
+
+/****************************
+      PUBLIC ACTIVITY
+****************************/
+div.public-activity, .createBranch, .createRepo {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0px; }
+
+div.public-activity {
+  padding: 10px 0px; }
+  div.public-activity img {
+    width: 30px;
+    border-radius: 5px; }
+  div.public-activity .icon-wrapper {
+    display: inline-block;
+    vertical-align: top; }
+  div.public-activity .info-wrapper {
+    display: inline-block; }
+  div.public-activity .time {
+    font-size: 12px;
+    color: #bbb; }
+  div.public-activity span.actor, div.public-activity span.master, div.public-activity span.repoText {
+    color: #4078c0;
+    font-weight: bold; }
+  div.public-activity span.octicon-mark-github {
+    vertical-align: top;
+    padding-left: 5px;
+    color: #bbb; }
+  div.public-activity span.head {
+    vertical-align: top;
+    font-size: 13px;
+    color: #4078c0; }
+  div.public-activity span.comMessage {
+    vertical-align: top;
+    font-size: 13px;
+    color: #666; }
+
+div.createRepo {
+  padding-left: 12px; }
+  div.createRepo span.repoTextCreate {
+    color: grey;
+    font-size: 13px; }
+  div.createRepo span.repoTextRepo {
+    color: #4078c0;
+    font-size: 13px; }
+  div.createRepo span.actorRepo {
+    color: #4078c0;
+    font-size: 13px; }
+  div.createRepo span.timeText {
+    font-size: 12px;
+    color: #bbb; }
+
+div.createBranch {
+  padding-left: 12px; }
+  div.createBranch .actorBranch {
+    color: #4078c0;
+    font-size: 13px; }
+  div.createBranch span.branchText {
+    background-color: rgba(209, 227, 237, 0.5);
+    border-radius: 3px;
+    color: #4078c0; }
+  div.createBranch span.branchTextCreate, div.createBranch .atText {
+    color: grey;
+    font-size: 13px; }
+  div.createBranch span.repoTextBranch {
+    color: #4078c0;
+    font-size: 13px; }
+  div.createBranch span.momentText {
+    font-size: 12px;
+    color: #bbb; }
+
+div.createRepo span:nth-child(2) {
+  color: #4078c0; }
+
+/*Octicons*/
+.octicon-git-branch {
+  color: #ccc; }
+
+.octicon-git-commit {
+  color: #ccc; }
+
+.octicon-repo {
+  color: #ccc; }
